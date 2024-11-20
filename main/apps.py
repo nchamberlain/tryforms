@@ -5,6 +5,6 @@ class MainConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'main'
 
-class ContactConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'contact'
+#class ContactConfig(AppConfig):
+#    default_auto_field = 'django.db.models.BigAutoField'
+#    name = 'contact'

@@ -4,5 +4,6 @@ from . import views
 app_name = "main"
 
 urlpatterns = [
-    path("contact", views.contact, name="contact")
+    # path "" means the root of contact/ in urls.py in tryforms (outer urls.py)
+    path("", views.contact, name="contact")
 ]
