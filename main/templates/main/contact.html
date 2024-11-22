@@ -1,16 +1,26 @@
-
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!-- Stylesheet has to follow the above info or get a complaint --> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
 {% block content %}
-
-{% load crispy_forms_tags %}
 
 <div class="container py-5">
     <h3>Contact.html is a form loaded into home.html</h3>
     <form method="post">
         {% csrf_token %}
         {{form}}
-        <!-- <button class="btn btn-primary"Submit</button> -->
+        <input type="submit" value="Submit to Me">
     </form>
 </div>
 
 {% endblock %}
+  </body>
+</html>
