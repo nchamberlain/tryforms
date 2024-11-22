@@ -4,5 +4,5 @@ from django import forms
 
 class ExampleForm(forms.Form):
     name = forms.CharField()
-    comment = forms.CharField(widget=forms.Textarea(attrs={'rows':3}))
+    comment = forms.CharField(widget=forms.Textarea)
     date = forms.DateField()
