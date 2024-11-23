@@ -5,24 +5,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>{% block title %}Base Title{% endblock %}</title>
     <!-- Stylesheet has to follow the above info or get a complaint --> 
-    <link rel="stylesheet" href={% static "main/style.css" %}>
+    <link rel="stylesheet" href={% static "main/basestyle.css" %}>
     <link rel="shortcut icon" type="image/png" href="{% static 'main/favicon.png' %}" >
   </head
   <body>  
 
 {% block content %}
-
-<h3>views.ExampleForm loaded into contact.html</h3>
-
-<div class="container">
-    <form method="post">
-        {% csrf_token %}
-        {{form}}
-        <input type="submit" value="Submit to Me">
-    </form>
-</div>
-
 {% endblock %}
   </body>
 </html>

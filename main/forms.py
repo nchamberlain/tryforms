@@ -7,3 +7,9 @@ class ExampleForm(forms.Form):
     comment = forms.CharField(widget=forms.Textarea(attrs={'rows':3}))
     date = forms.DateField()
 
+class ClientForm(forms.Form):
+    fname = forms.CharField(max_length=30)
+    lname = forms.CharField(max_length=40)
+    street_addr = forms.CharField(max_length=100)
+    city_name = forms.CharField(max_length=40)
+    state = forms.CharField(max_length=40)

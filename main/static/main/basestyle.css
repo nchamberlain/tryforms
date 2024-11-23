@@ -1,0 +1,14 @@
+body {
+    background-color: aliceblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+input[type="text"] {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+label {
+    width:100px;
+    text-align: right;
+    display: inline-block;
+}

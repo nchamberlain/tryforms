@@ -2,6 +2,30 @@ li a {
     color: green;
 }
 body {
-    background-color: lightblue;
+    background-color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
+}
+input[type="text"] {
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+input[type="text"]:focus {
+    width: 400px;
+}
+input[type="submit"] {
+    margin-top: 20px;
+    margin-left: 155px;
+    font-size:large;
+}
+label {
+    width:150px;
+    text-align: right;
+    display: inline-block;
+}
+.container {
+    color:blue;
+    background-color: lightpink;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
 }

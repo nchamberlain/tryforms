@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-  </body>
-</html>
+{% extends "main/base.html" %}
+
+{% block title %}Add Client Data{% endblock %}
+
+{% block content %}
+  <h1>Client Data</h1>
+  <p>Please fill out this form with the client's data</p>
+  {{ form }}
+{% endblock %}
